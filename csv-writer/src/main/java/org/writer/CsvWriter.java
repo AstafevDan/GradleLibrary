@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
  * Объекты списка должны быть экземплярами классов, помеченных аннотацией {@code CSV}.
  * </p>
  *
- * <h4>Пример использования:</h4>
+ * <h2>Пример использования:</h2>
  * <pre>{@code
  * List<Person> list = List.of(
  *      new Person("Alex", "Smith", 2, Months.APRIL, 2001),
@@ -40,6 +40,12 @@ public class CsvWriter implements Writable {
      * Знак прочерка для отсутствующих значений объекта в сгенерированном CSV файле.
      */
     private static final String DASH = "-";
+
+    /**
+     * Конструктор по умолчанию.
+     */
+    public CsvWriter() {
+    }
 
     /**
      * Записывает список объектов в CSV файл.
