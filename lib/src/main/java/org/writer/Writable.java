@@ -9,7 +9,8 @@ public interface Writable {
 
     /**
      * Записывает список объектов в указанный файл.
-     * @param data Список объектов, которые должны быть записаны в файл.
+     *
+     * @param data     Список объектов, которые должны быть записаны в файл.
      * @param fileName имя файла, в который должны быть записаны данные.
      */
     void writeToFile(List<?> data, String fileName);
